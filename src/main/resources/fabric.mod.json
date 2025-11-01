@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "submit_mod",
+  "version": "${version}",
+
+  "name": "submit_mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/submit_mod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": ["org.mod.submit_mod.client.Submit_modDataGenerator"],
+    "client": ["org.mod.submit_mod.client.Submit_modClient"],
+    "main": ["org.mod.submit_mod.Submit_mod"]
+  },
+
+  "mixins": [
+    "submit_mod.mixins.json"
+    ,{
+      "config": "submit_mod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
