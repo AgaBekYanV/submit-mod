@@ -41,3 +41,5 @@ build/
 .git/
 docker/
 .gradle/
+run/logs
+run/downloads/log.json

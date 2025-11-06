@@ -2,7 +2,7 @@ package org.mod.submit_mod;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
-import org.mod.submit_mod.Init.ItemInit;
+import org.mod.submit_mod.Init.ModItems;
 
 import java.util.logging.Logger;
 
@@ -15,7 +15,7 @@ public class Submit_mod implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Initializing Submit_mod");
-        ItemInit.load();
+        ModItems.initialize();
     }
 
     public static Identifier id(String path) {

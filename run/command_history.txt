@@ -1,0 +1,3 @@
+/give @reg_item
+/give @s reg
+/give @s mod
