@@ -1,3 +1,4 @@
 /give @reg_item
 /give @s reg
 /give @s mod
+/give @s submit_mod:reg_book

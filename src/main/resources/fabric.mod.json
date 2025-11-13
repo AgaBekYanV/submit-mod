@@ -9,7 +9,7 @@
   "contact": {},
 
   "license": "All-Rights-Reserved",
-  "icon": "assets/submit_mod/icon.png",
+  "icon": "icon0.png",
 
   "environment": "*",
   "entrypoints": {
